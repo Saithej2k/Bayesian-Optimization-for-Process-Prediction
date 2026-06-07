@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=70", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "process-bo"
+version = "0.1.0"
+description = "Gaussian-process Bayesian optimization for noisy process prediction."
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+dependencies = [
+  "numpy>=2.0",
+  "scipy>=1.14",
+  "scikit-learn>=1.6",
+  "torch>=2.5",
+  "matplotlib>=3.9",
+  "pandas>=2.2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.3"]
+
+[project.scripts]
+process-bo-experiment = "process_bo.experiment:main"
+process-bo-train = "process_bo.torch_model:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-q"
