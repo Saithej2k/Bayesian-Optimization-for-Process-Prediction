@@ -1,0 +1,40 @@
+{
+  "seed": 7,
+  "budget": 60,
+  "n_initial": 8,
+  "noise_std": 1.2,
+  "grid_size": 25,
+  "target_margin": 1.0,
+  "true_optimum_x": [
+    176.98324022346367,
+    28.463687150837988
+  ],
+  "true_optimum_yield": 97.74421641366149,
+  "target_yield": 96.74421641366149,
+  "results": [
+    {
+      "method": "ei",
+      "evaluations_to_target": 10,
+      "grid_evaluations_to_target": 365,
+      "evaluation_reduction_vs_grid": 0.9726027397260274,
+      "reached_target": true,
+      "best_true_yield": 96.82864020001577,
+      "best_temperature_c": 178.27204110100865,
+      "best_residence_time_min": 29.55560639500618,
+      "target_yield": 96.74421641366149,
+      "true_optimum_yield": 97.74421641366149
+    },
+    {
+      "method": "ucb",
+      "evaluations_to_target": 19,
+      "grid_evaluations_to_target": 365,
+      "evaluation_reduction_vs_grid": 0.947945205479452,
+      "reached_target": true,
+      "best_true_yield": 97.58243751997884,
+      "best_temperature_c": 178.03428050130606,
+      "best_residence_time_min": 28.724369779229164,
+      "target_yield": 96.74421641366149,
+      "true_optimum_yield": 97.74421641366149
+    }
+  ]
+}
